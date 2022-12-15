@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+</head>
+<body>
+    두번째 HTML문서 입니다. 파일 수정합니다.
+    §나는 나다.
+    §너는 너다.
+    ※지금 배고프다.
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 텍스트 관련 태그들 -->
+    <h1>제목 표시하기</h1>
+    <h2>제목 표시하기</h2>
+    <h3>제목 표시하기</h3>
+    <h4>제목 표시하기</h4>
+    <h5>제목 표시하기</h5>
+    <h6>제목 표시하기</h6>
+
+    안녕하세요 <br> <!-- <br>은 줄만 바꿈 break의 약자-->
+    저는 홍길동입니다 <br> 
+    사는 곳은 서울입니다. <br>
+
+    <hr> <!-- 선을 넣어줌(내용 구분 위해)-->
+    <hr> </hr> <!--위와 같은 의미 -->
+
+    <p>첫번째 문단</p> <!-- <p>는 문단을 나눔 줄바꾸고 공백줄을 넣어줌 -->
+    <p>두번째 문단<p> 
+    <p>세번째 문단</p>
+
+    <pre>
+        별 하나에 사랑과
+
+        별 하나에 쓸쓸함과
+        
+        별 하나에 동경(憧憬)과
+        
+        별 하나에 시와
+        
+        별 하나에 어머니, 어머니
+    </pre> <!-- 복사문 그래도를 표현 -->
+
+    홍 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 길                     동
+    <!-- '&nbsp;'는 띄어스기 한칸을 의미-->
+    <br>
+    글자강조<strong>글자강조</strong>  <!-- = <b></b> 역할이 같음-->
+    <br>
+    글자기울임<em>글자기울임</em>
+    <br>
+    <q>인용구문</q>
+    <br>
+    <mark>중요구문</mark>
+    <br>
+    <span>일부 영역에 효과를 주기위해 사용</span>
+    <br>
+
+    목록를 표시하는 태그들
+    <!-- ul , ol, dl -->
+    <ul> <!-- 기호를 이용하는 목록 표기방법-->
+        <li>JAVA</li>
+        <li>ORCALE</li>
+        <li>JHTML</li>
+    </ul>
+
+    <hr>
+    
+    <ol type ="a">  <!-- 순서가 표시되는 목록 표기방법(type을 바꿀 수 있다. 기본 타입은 숫자)-->
+        <li>JAVA</li> <!-- 하나의 목차를 나타내는 태그-->
+        <li>ORCALE</li>
+        <li>JHTML</li>
+    </ol>
+    
+    <hr>
+
+    <ul>
+        <li>1일차
+            <ol type = "a">
+                <li>해녀 박물관</li>
+                <li>낚시 체험</li>
+            </ol>
+        </li>
+        <li> 2일차
+            <ol>
+                <li>용눈이 오름</li>
+                <li>만장굴</li>
+            </ol>
+        </li>
+    </ul>
+
+    <dl>
+        <dt>hello</dt>
+        <dd>
+            [감탄사, 명사] (만났을 때의 인사로) 안녕(하세요); 인사; (전화에서나 남의 관심을 끌 때) 여보세요
+            [감탄사, 명사] [英] 이런, 어머나(놀라움을 나타냄)
+            [감탄사, 명사] [비격식] 얼씨구(상대방의 말이 바보 같거나, 상대방이 주의를 기울이지 않고 있다고 여길 때)
+        </dd>
+    </dl>
+
+    <!-- table tag -->
+    <!-- 행 = tr ,  열 = td -->
+    <figure>
+        <figcaption>
+            <p>국내 총 생산량</p>
+        </figcaption>
+        <table border="1" height="500" width="500"> <!-- px(기본값) , % --> 
+            <!-- <caption>
+                <strong> 생산년도 </strong>
+            </caption> -->
+            <tr>
+                <th>1</th><th>2</th><th>3</th><th>4</th> <!-- "th"는 대부분 컬럼에 사용 됨(좀 더 진하고 중간정렬이 됨)-->
+            </tr> 
+            <tr> 
+                <td>5</td><td>6</td><td>7</td><td>8</td> 
+            </tr>
+            <tr> 
+                <td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+            <tr> 
+                <td>13</td><td>14</td><td>15</td><td>16</td>
+            </tr>
+        </table>
+    </figure>
+
+    <br>
+
+    <!-- 행병합 = rows ,  열병합 = colspan -->
+    <table border="1" height="350" width="350">
+        <caption> 2행 3열 병합하기</caption>
+        <tr>
+            <td rowspan="2">1</td ><td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="1" height="350" width="350">
+        <caption> 3행 2열 </caption>
+        <thead>=
+            <tr>
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <td>3</td><td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+             <tr>
+                 <td>5</td><td>6</td>
+             </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

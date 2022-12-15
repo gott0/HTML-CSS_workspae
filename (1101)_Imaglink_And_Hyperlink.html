@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--절대 경로-->
+    <h1>절대 경로</h1>
+    <img src = "C:\work\HTML&CSS\dog.jpg" alt = "갱쥐" /> <!-- 띄어쓰기는 언더바로  -->
+    
+    <br>
+    <!--절대 경로-->
+    <h1>절대 경로</h1>
+    <img src = "C:\work\HTML&CSS\images\cats.jpg" alt = "냥이" /> 
+
+    <br>
+    <!-- 상대 경로 = 이미지와 html파일이 같은 폴더 안에 있을 때 --> 
+    <h1>상대 경로</h1>
+    <img src = "dog.pg" alt = "갱쥐"/> <!-- 이미지의 정보가 정확하지 않을 때( "dog.pg" = j를 뺌) "갱쥐"(설정문자열)로 표시해줌 -->
+
+    <br>
+    <!-- 상대 경로 = 이미지가 하위 폴더에 있을 때--> 
+    <h1>상대 경로</h1>
+    <img src = "images/cats.jpg" height = "150" width = "150" alt = "냥이" /> <!-- "images" = 하위폴더 이름 , 크기조절 가능-->
++
+    <br>
+    <!-- 상대 경로 = 이미지가 상위 폴더에 있을 때--> 
+    <h1>상대 경로</h1>
+    <img src = "../cats.jpg" alt = "냥이"/> <!-- 더 상위에 있을 때 : "..\..\..\cats.jpg" 이런식으로 추가-->
+    
+    <br>
+    <!-- URL사용하기 -->
+    <h1>URL사용하기 </h1>
+    <img src = "https://cdn.pixabay.com/photo/2018/10/15/13/48/milk-teeth-3748992_960_720.jpg">
+
+    <hr></hr>
+
+    <!-- 하이퍼 링크 -->
+    <!-- <a href="파일위치(상대, 절대), URL"> 화면에 나타나는 부분</a> -->
+    <a href="https://www.naver.com/">NAVER</a>
+
+    <br>
+    <a href="tags.html">이번주 1등 당첨번호</a> <!--문자열을 링크 대신-->
+
+    <br>
+    <a href="tags.html" target="_self">이번주 1등 당첨번호</a> <!-- self는 링크 클릭 시 기존 창에서 링크 실행-->
+    <br>
+    <a href="tags.html" target="_blank">이번주 2등 당첨번호</a> <!-- blank는 링크 클릭 시 새창을 띄움-->
+
+    <br>
+    <a href="https://www.naver.com/"> <img src = "naver.jpg"></a> <!--이미지를 링크 대신-->
+
+    <hr></hr>
+
+    <!--한 페이지 내에서 문서 이동 -->
+
+    <a href="#content1">한줄평</a>
+    <a href="#content2">반품환불</a>
+    <a href="#content3">도서정보</a>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <a id = "content1">한줄평</a>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <a id = "content2">반품위치</a>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <a id = "content3">도서정보</a>
+    <br><hr><br>
+
+    <!-- 이미지 링크 범위 설정 -->
+    <img src = "dog.jpg" alt = "갱쥐" usemap="#cutedog"> <!-- usemap = 맵(이미지에서 범위 링크가 들어갈 범위)의 이름 -->
+    <map name="cutedog">
+        <area shape="rect" coords="420,550,550,688" href="https://www.naver.com/" target="blank">
+    </map><!-- coords(좌표)는 그림판에 이미지 불러와서 좌표 찾아 설정 -->
+
+    <!-- "_blank" 는 클릭하고 다시 한번 클릭하면 계속 새로운 탭이 열리는 반면,
+          "blank" 는 클릭하고 다시 한번 클릭하면 또 다른 새로운 탭이 열리는게 아니라 첫번째로 생성된 새 탭을 계속 연다-->
+
+    <br><br>
+<a href="#top"><h1>맨위로</h1></a> <!-- #top은 id위치가 필요없다-->
+</body>
+</html>

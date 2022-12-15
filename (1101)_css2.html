@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 {속성:값; 속성:값; 속성:값;} */
+        
+            /* 전체 선택자 */
+            /* * {color: green;}  */
+       
+            /* 태그 선택자 */
+            /* p { font-size: 50px;}
+            h1 { font-size: 70px;}  */
+
+        /* 클래스 선택자 : 효과를 여러개 적용가능 */
+        .bluetext {color: blue;}
+        .redtext {color: red;}
+         /* └ 클래스명은 재량으로 설정 */
+         .textsize30 { font-size: 30px;}
+
+         /* 아이디 선택자 : 효과를 하나만 적용 가능 */
+         #bluetext {color: blue;}
+         #textsize30 { font-size: 30px;}
+         #textsize50 { font-size: 50px;}
+         
+         /* 그룹 선택자 */
+         /* h1, h2, span { color: green;} */
+
+         /* 선택자 우선순위 : 작성 순서상 마지막을 적용한다*/
+         /* p {color: blue !important;}
+         p {color: red;} */
+
+         /* css의 상속 : 일부 속성은 상속에서 제외(border속성) */
+         body {color: red;}
+    </style>
+</head>
+<body>
+    기본 글자 입니다.
+
+    <!-- <p class="bluetext textsize30"> 첫번째 p태그 입니다.</p>
+    <p class="redtext textsize30"> 두번째 p태그 입니다.</p>
+
+    <p id="textsize50"> 세번째 p태그 입니다.</p> 
+    <p id="textsize30 bluetext"> 네번째 p태그 입니다.</p>  -->
+    <!--id 선택자의 경우, 효과를 두개 이상 주면 아무효과도 적용 받지 못 함-->
+
+    <p> 다섯번째 p태그 입니다.</p>  <!--블루가 적용되고 다음 레드가 적용되므로 결과적으로 레드가 적용 됨-->
+                                  <!-- but. 위에서 !important가 붙은게 있다면 순서 상관 없이 그것으로 적용됨  -->
+
+    <h1> h1태그 입니다.</h1>
+    <h2> h2태그 입니다.</h2>
+    <span>span태그 입니다.</span>
+
+</body>
+</html>

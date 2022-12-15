@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            width: 150px ;
+            background-color: aquamarine;
+        }
+        
+        /* 공백과 줄바꿈 속성 white-space : normal / nowrap / pre / pre-wrap / pre-line */  
+        .normal { white-space: normal;}
+        .nowrap { white-space: nowrap;}
+        .pre { white-space: pre;}
+        .pre-wrap { white-space: pre-wrap;}
+        .pre-line { white-space: pre-line;}
+
+        /* p{
+            border: 1px solid black;
+            font-size: 12px;
+        } */
+
+        /* 택스트 정렬 text-aline (수평 정렬) : left | right | center | justify (양쪽 정렬) */
+        .left{ text-align: left;}
+        .right{ text-align: right;}
+        .center{ text-align: center;}
+        .justify{ text-align: justify;}
+
+       
+       
+        /* 줄(행) 간격   */
+        .line{
+            line-height: 2em;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* 글자 제어 overflow (글자가 화면 밖으로 나가는것을 제어 ) */
+
+        .textcontrol{
+            border: 1px solid #000;
+            width:  300;
+            /* 글자가 화면 밖으로 나가는것을 제어할때는 아래 3가지의 속성을 같이 사용해야함 
+             (white-space , overflow , text-overflow) */
+            white-space: nowrap;
+            /* 지정 범위 내에서만 글자를 보여주고 범위 이외의 부분은 숨김 */
+            overflow: hidden;
+            /* 숨겨진 부분이 있으면 ... 으로 표시  */
+            text-overflow: ellipsis;
+        }
+
+        /* p태그에 마우스를 위치하면 숨겨진 텍스트를 표시함 */
+        p:hover{
+            overflow: visible;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2> 공백과 줄바꿈 제어</h2>
+    <!-- 디폴트 -->
+    <p class="normal"> 요소의 공백문자 를 어떻게 처리하 는지 정 의 합니다.</p>
+    <!-- 문자를 범위로 감싸주지 않음 -->
+    <p class="nowrap"> 요소의 공백문자 를 어떻게 처리하 는지 정 의 합니다.</p>
+    <!-- pre 태그와 동일 -->
+    <p class="pre">요소의 공백문자 
+                                    를 어떻게 
+        처리하 는지 
+        정 의 합니다.</p>
+    <!-- 공백을 인정하고 지정 범위 밖으로 나갈수 없게 감싸줌  -->
+    <p class="pre-wrap"> 요소의 공백문자             를 어떻게 처리하 는지           정 의 합니다.</p>
+    <!-- 공백을 인정하지 않지만 줄바꿈은 인정 -->
+    <p class="pre-line">요소의 공백              문자 를 어떻게 처리            하 는지 정 의 합니다.</p> 
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <h2> 텍스트 정렬 </h2>
+    <p class="left">
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    <p class="right">
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    <p class="center">
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    <p class="justify">
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <h2> 줄(행) 제어 </h2> 
+    <p class="line">
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    <p >
+        ddd ddddd dddddd dddd ddd dd ddddd dddddf ffffffe ee eeeee e
+        ffff ff zzzzz zz zz vvvvv vvvv eeeeeee dddd ssswwww wwww
+    </p>
+    <br>
+
+    <p class="box">
+        가운데 정렬( 수직 )
+    </p>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <h2> 글자 제어 </h2>
+    <p class="textcontrol"> 글자아아아ㅏㅏ 아아아 아아아아 아아아 아아아아 아아 아아아아앙 아아아아 </p>
+
+
+    
+
+
+</body>
+</html>
